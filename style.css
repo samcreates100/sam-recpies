@@ -1,5 +1,5 @@
 img {
-    width:250px;
+    width: 250px;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -7,11 +7,12 @@ img {
     
 }
 button {
-    width: 50px;
-    height:20px;
+    width: 70px;
+    height:40px;
     color:black;
     border:black solid 2px;
-    display: block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateZ(-2px);
 }
 h1 {
     text-align: center;
@@ -19,16 +20,82 @@ h1 {
     border: 2px black dashed;
 }
 body {
- width:900px;
- height: 800px;
- border:black 10px solid;
-margin-right: auto;
+ width:1000px;
+ height: 1550px;
+ border:black 3px solid;
+ margin-right: auto;
  margin-left: auto;
- background-color:white slategray;
+ background-color:burlywood;
 }
 .home {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+    transform: translateZ(-2px);
+}
+ol {
+    list-style-type:none;
+    counter-reset: step;
+}
+ol li::before {
+    content:"Step" counter(step) ": ";
+    counter-increment: step;
+}
+.steps {
+    width: 700px;
+    height: 75px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid black;
+    border-width: 0px 0px 2px 0px;
+}
+.title {
+    border-width: 1px;
+    border: black solid 1px;
+    text-align: center;
+    padding: 1px;
+}
+.end {
+    border: black solid 1px;
+    text-align: center;
+    padding: 1px;
+}
+.pepperoni {
+    float:right;
+    margin-top:50px;
+}
+.cheese {
+    float:left;
+    margin-top:50px;
+}
+.ingredients {
+    margin-left: 350px;
+    margin-right:350px;
+}
+.salad {
+    width:1000px;
+    height: 1000px;
+}
+#home {
+    height:190px;
+    width:1000px;
+}
+.homepage {
+    margin-left: 390px;
+    margin-right: 300px;
+
+}
+.lettuce {
+    float: left;
+    width:20px;
+    height:20px;
+}
+.homepagetitle {
+    margin-left: 370px;
+    margin-right: 300px;
+
+}
+.pasta {
+    height:1000px ;
 }
